@@ -1,0 +1,142 @@
+/* * CSS style code here */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#new_update > div {
+    height: 43px;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    color: #212432;
+    background-color: #4296CB26;
+}
+
+#new_update > div > div:first-of-type {
+    width: 62%;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+#new_update > div > div:first-of-type span {
+    color: #4296CB;
+}
+
+#new_update > div > div {
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    color: #4296CB;
+}
+
+#navbar {
+    height: 110px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+
+#navbar > div, #navbar > div > div {
+    /* border: 1px solid black; */
+    width: auto;
+    color: #212432;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#logo_header img {
+    height: 90%;
+}
+
+#head_workouts {
+    display: flex;
+    padding: 0 9px;
+    box-sizing: border-box;
+}
+
+#head_programs {
+    display: flex;
+    padding: 0 9px;
+    box-sizing: border-box;
+}
+
+#head_healthy_living {
+    display: flex;
+    padding: 0 9px;
+    box-sizing: border-box;
+}
+
+#head_community {
+    display: flex;
+    padding: 0 9px;
+    box-sizing: border-box;
+}
+
+#head_about {
+    display: flex;
+    padding: 0 9px;
+    box-sizing: border-box;
+}
+
+#head_store {
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+#head_membership {
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+#head_membership p {
+    color: #4296CB;
+}
+
+#head_loginout {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 21px 32px 30px;
+    box-sizing: border-box;
+    border-left: 1px solid rgba(227,235,238,0.5);
+    border-right: 1px solid rgba(227,235,238,0.5);
+    height: 100%;
+}
+
+#head_loginout > div, #head_loginout > div p, #head_loginout > div span {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+#head_loginout div+div {
+    display: flex;
+}
+
+#head_search {
+    padding: 0px 15px 0px 20px;
+    box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+    padding: 8px 0;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+#dropmenu_container {
+    display: block;
+    height: 120px;
+    border: 1px solid black;
+}
