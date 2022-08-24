@@ -1,0 +1,185 @@
+#whole-container{
+    background: #F0F4F6;
+}
+#Header{
+height: 100px;
+width:100%;
+border: 1px solid black;
+margin-bottom: 10px;
+background-color: #Fff;
+}
+#inner-Parent{
+height: 1020px;
+width: 100%;
+/* border: 1px solid black; */
+background: #F0F4F6;
+}
+#inner-Parent>#boundary{
+height: 790px;
+width: 80%;
+/* border: 1px solid black; */
+/* margin-top: 4%; */
+margin:0.5% auto;
+background: #F0F4F6;
+
+}
+#inner-Parent>#boundary>#Para{
+    height: 150px;
+    width:100;
+    /* border: 1px solid black; */
+   margin-bottom: 12px;
+}
+#inner-Parent>#boundary h2{
+    font-size: 30px;
+    margin: 0;
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+#inner-Parent>#boundary p{
+    font-family:"Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif; 
+    font-size: 15px; 
+}
+#inner-Parent>#boundary>#Passes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+   gap: 20px 10px;
+  
+    
+
+}
+#inner-Parent>#boundary>#Passes>.passes-class{
+    /* border: 1px solid blue; */
+   
+   height: 420px;
+   border-radius: 15px;
+   border: 1px solid #F0F4F6;
+    
+}
+#inner-Parent>#boundary>#Passes>.passes-class img{
+    height: 250px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+#inner-Parent>#boundary>#Passes>.passes-class>.pass-desc{
+    height: 180px;
+    width: 100%;
+    border: 1px solid white;
+    background:#fff;
+    margin-top: 0;
+
+}
+#inner-Parent>#boundary>#Passes>.passes-class>.pass-desc>.innerbuttons{
+display: flex;
+/* border: 1px solid black; */
+gap:130px
+}
+#inner-Parent>#boundary>#Passes>.passes-class>.pass-desc>.innerbuttons p{
+    font:18px;
+    font-weight: bold;
+}
+#inner-Parent>#boundary>#Passes>.passes-class>.pass-desc>.innerbuttons button{
+    color: white;
+background: #4296CB;
+font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+border-radius: 10px;
+height: 35px;
+width: 140px;
+}
+
+
+
+#inner-parent-2{
+height: 650px;
+width: 100%;
+
+border: 1px solid #F0F4F6;
+background: #F0F4F6;
+margin-top: 1px;
+}
+#inner-parent-2>#boundary-2{
+height: 550px;
+width: 80%;
+border: 1px solid #F0F4F6;;
+background: #F0F4F6;
+
+margin:1% auto;
+/* margin-bottom: 10px; */
+}
+#inner-parent-2>#boundary-2{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,auto);
+   gap: 20px 10px;
+   
+}
+#inner-parent-2>#boundary-2{
+    border: 1px solid #F0F4F6;;
+    
+}
+#inner-parent-2>#boundary-2>div p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+#inner-parent-2>#boundary-2>div button{
+color:white;
+background:#4296CB;
+border-radius: 10px;
+
+}
+
+
+
+#Product-desc{
+height:580px;
+width: 100%;
+border: 1px solid white;
+background-color: #Fff;
+
+}
+#Product-desc>#dabba{
+height:500px;
+width: 85%;
+/* border: 1px solid black; */
+margin:3% auto;
+display: flex;
+
+}
+#Product-desc>#dabba>div{
+height:490px;
+width: 50%;
+/* border: 1px solid black; */
+margin: auto;
+background-color: #Fff;
+}
+
+#Product-desc>#dabba>div>img{
+    height: 490px;
+    width:100%
+}
+#Product-desc>#dabba>div h2{
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 30px;
+    margin-left: 7px;
+  
+    /* background: #F0F4F6; */
+}
+#Product-desc>#dabba>div h4{
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 16px;
+    margin-left: 7px;
+    /* background: #F0F4F6; */
+
+}
+#Product-desc>#dabba>div p{
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 16px;
+    margin-left: 7px;
+
+
+
+}
+
