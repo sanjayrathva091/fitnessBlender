@@ -1,0 +1,99 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    
+    /* font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif; */
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+#listing_block{
+    width: 100%;
+    height: 150px;
+    background: #f9fcfd;
+    
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+#Expert_articals{
+    width:100%;
+    padding:20px,0px;
+    /* margin-bottom: 20px; */
+    border:1px solid #e3ebee;
+}
+#title h1{
+    width: 90%;
+    margin: auto;
+    font-size: 3rem;
+    padding: 20px;
+    
+
+}
+#hp{
+    width:90%;
+    margin: auto;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+/* #search_bar{
+    width:100%;
+    height: 70px;
+    display: flex;
+    border:2px solid red;
+}
+#search_bar div{
+    width: 90%;
+    margin: auto;
+    border-left: 1px solid #e3ebee;
+} */
+
+#search_bar{
+    width: 100%;
+    display: flex;
+    /* flex-direction: column; */
+    /* height: 70px; */
+    padding-left: 70px;
+    border-bottom:1px solid #e3ebee;
+}
+/* .dropdown{
+    width:90%;
+    margin: auto;
+} */
+.dropdown button{
+    padding:20px;
+    border:0px;
+    background-color: white;
+    border-left: 1px solid #e3ebee;
+    color: #7b7f92;
+    font-size: x-large;
+}
+#search_items{
+    border-right:1px solid #e3ebee;
+}
+.sub-menu1{
+    display: none;
+    /* border: 2px solid red; */
+}
+.sub-menu1:hover{
+    display: block;
+    border:2px solid red
+}
+
+#sort_bar_flex{
+    width:90%;
+    margin:10px auto auto auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+#sort_ele{
+    border: 0px;
+}
