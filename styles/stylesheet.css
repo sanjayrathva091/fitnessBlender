@@ -18,7 +18,7 @@ body {
 #new_update > div > div:first-of-type {
     width: 62%;
     font-size: 13px;
-    font-family: sans-serif;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;;
 }
 
 #new_update > div > div:first-of-type span {
@@ -40,7 +40,7 @@ body {
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
-    font-family: sans-serif;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;;
     padding: 0 30px;
     box-sizing: border-box;
 }
@@ -54,7 +54,8 @@ body {
 }
 
 #logo_header img {
-    height: 90%;
+    width: 156px;
+    border: 1px solid black;
 }
 
 #head_workouts {
@@ -135,8 +136,223 @@ body {
   'opsz' 48
 }
 
-#dropmenu_container {
+.content-group {
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    background: linear-gradient(to bottom right,#3d97ce 0%,#12debb 100%);
+    color: #fff;
+    justify-content: center;
+}
+
+.content-group > div {
+    display: flex;
+}
+
+.unit-primary > div {
+    width: 50%;
+    margin: auto;
+    margin-top: 160px;
+}
+
+.unit-primary > div h2 {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    line-height: 1.2em;
+    font-weight: 400;
+    text-rendering: optimizelegibility;
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.unit-primary > div p {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    padding: 0;
+    line-height: 1.6em;
+    position: relative;
+    z-index: 3;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.unit-cta {
+    width: fit-content;
+    border-radius: 4px;
+    padding: 16px 32px;
+    background-color: #212432;
+}
+
+.unit-cta a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.midsec {
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.content-group .group.-edge {
+    width: 100%;
+}
+
+.-flex.-center {
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.-flex {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
     display: block;
-    height: 120px;
-    border: 1px solid black;
+}
+
+.unit-block.passes {
+    background: -webkit-linear-gradient(320deg,#ece6f8 0%,#f9e7f6 100%);
+    background: -o-linear-gradient(320deg,#ece6f8 0%,#f9e7f6 100%);
+    background: linear-gradient(130deg,#ece6f8 0%,#f9e7f6 100%);
+}
+
+.unit-block.full {
+    width: 100%;
+}
+
+.unit-block {
+    position: relative;
+    width: calc(50% - 1rem);
+    margin: 0.5rem;
+    height: fit-content;
+    border: 1px solid red;
+}
+
+.unit-content.mc-dc {
+    max-width: 420px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.unit-title {
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+    position: relative;
+    z-index: 2;
+    font-weight: normal;
+}
+
+.fbplus {
+    font-weight: bold;
+}
+
+.fbplus .fb {
+    color: #212432;
+    font-size: 2.5rem;
+}
+
+span.plus {
+    color: #4296CB;
+}
+
+.unit-body {
+    line-height: 1.6em;
+    color: #4e5262;
+}
+
+.unit-body + div {
+    margin-top: 50px;
+}
+
+.unit-body + .btn a {
+    width: fit-content;
+    color: white;
+    background-color: #212432;
+    border-radius: 5px;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+.wide {
+    text-align: center;
+    max-width: 100%;
+}
+
+/* workouts */
+
+.unit-block.workouts {
+    background: #f0f4f6;
+}
+
+p.unit-body {
+    color: #4e5262;
+    margin: 0;
+}
+
+.unit-link .link {
+    font-size: 16px;
+    color: #4296cb;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.unit-content.mc-dc  {
+    max-width: max-content;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.mc-dc img {
+    width: 100%;
+}
+
+.unit-block.articles {
+    background: #000;
+    color: white;
+}
+
+.unit-block.recipes {
+    background-color: #D8D9DA;
+}
+
+.unit-block.community {
+    background-color: #EFFBFF;
+}
+
+.unit-block.community .full{
+    margin-top: 0;
+}
+
+.unit-block.community img {
+    height: 95%;
 }
