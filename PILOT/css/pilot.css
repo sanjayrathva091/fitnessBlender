@@ -1,0 +1,121 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+.material-symbols-outlined {
+    color: white;
+    background-color: #4296cb;
+    margin-top:5px;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+  
+}
+
+#pilot_program{
+    width:100%;
+    padding:20px,0px;
+    /* margin-bottom: 20px; */
+    border:1px solid #e3ebee;
+    
+}
+#title h1{
+    width: 80%;
+    margin: auto;
+    font-size: 5rem;  
+
+}
+#hp{
+    width:80%;
+    margin: auto;
+    color: gray;
+    margin-top: 5px;
+}
+#sort_bar,#content_container{
+    background: #f0f4f6;
+}
+
+#sort_bar_flex{
+    width:90%;
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+#sort_bar_flex span{
+    padding-top: 12px;
+
+}
+#sort_ele{
+    border: 0px;
+}
+#content_block{
+
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:20px;
+
+}
+
+#gift{
+    background-image: url(https://cloudfront.fitnessblender.com/assets/img/custom-cards/orange.png);
+    text-align: center;
+   color: white;
+}
+#valign{
+    padding-top: 40%;
+}
+#fb{
+    opacity: 0.6;
+}
+.sub-head{
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom:2px solid white;
+}
+.csf{
+    font-size: 5.9rem;
+}
+.sub-head{
+    font-size: 3rem;
+}
+#eavail{
+    padding-top: 50px;
+}
+.content_item{
+    background-color: #fff;
+    border:2px solid white;
+    /* margin-top: 20px;    */
+}
+#content_prop{
+    padding-left: 5px;
+    border: 2px solid red;
+}
+#content_prop p{
+    font-size: 14px;
+    height: auto;
+    /* line-height: -10px; */
+    border: 2px solid blue;
+}
+.content_item:hover{
+    border:2px solid #4296cb;
+    transition:border 1s;
+}
+#btm{
+    /* display: flex; */
+    /* flex-direction:row-reverce ; */
+    justify-items: center;
+    justify-content: space-between;
+}
+#btm button{
+    background-color: #4296cb;
+}
