@@ -43,6 +43,10 @@ body {
     font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;;
     padding: 0 30px;
     box-sizing: border-box;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 #navbar > div, #navbar > div > div {
@@ -55,41 +59,116 @@ body {
 
 #logo_header img {
     width: 156px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 #head_workouts {
     display: flex;
-    padding: 0 9px;
+    padding: 33px 9px;
     box-sizing: border-box;
+}
+
+#head_workouts div {
+    display: none;
+}
+
+#head_workouts:hover> div {
+    display: block;
+    position: absolute;
+    top: 110px;
+    z-index: 1000;
+    color: white;
+    background-color: #212432;
+    width: auto;
+    height: 170px;
 }
 
 #head_programs {
     display: flex;
-    padding: 0 9px;
+    padding: 33px 9px;
     box-sizing: border-box;
+}
+
+#head_programs > div {
+    display: none;
+}
+
+#head_programs:hover > div {
+    display: block;
+    position: absolute;
+    top: 110px;
+    z-index: 1000;
+    color: white;
+    background-color: #212432;
+    width: auto;
+    height: 170px;
 }
 
 #head_healthy_living {
     display: flex;
-    padding: 0 9px;
+    padding: 33px 9px;
     box-sizing: border-box;
+}
+
+#head_healthy_living > div {
+    display: none;
+}
+
+#head_healthy_living:hover > div {
+    display: block;
+    position: absolute;
+    top: 110px;
+    z-index: 1000;
+    color: white;
+    background-color: #212432;
+    width: auto;
+    height: 170px;
 }
 
 #head_community {
     display: flex;
-    padding: 0 9px;
+    padding: 33px 9px;
     box-sizing: border-box;
+}
+
+#head_community > div {
+    display: none;
+}
+
+#head_community:hover > div {
+    display: block;
+    position: absolute;
+    top: 110px;
+    z-index: 1000;
+    color: white;
+    background-color: #212432;
+    width: auto;
+    height: 170px;  
 }
 
 #head_about {
     display: flex;
-    padding: 0 9px;
+    padding: 33px 9px;
     box-sizing: border-box;
 }
 
+#head_about > div {
+    display: none;
+}
+
+#head_about:hover > div {
+    display: block;
+    position: absolute;
+    top: 110px;
+    z-index: 1000;
+    color: white;
+    background-color: #212432;
+    width: auto;
+    height: 170px;
+}
+
 #head_store {
-    padding: 0 16px;
+    padding: 33px 16px;
     box-sizing: border-box;
 }
 
@@ -120,6 +199,31 @@ body {
 
 #head_loginout div+div {
     display: flex;
+}
+
+div #head_loginout .sub-menu {
+    display: none;
+    position: absolute;
+    top: 110px;
+    z-index: 1000;
+    color: white;
+    background-color: #212432;
+    padding: 0 20px;
+    height: 170px;
+}
+
+div #head_loginout:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu h3 {
+    width: fit-content;
+    border: 1px solid white;
+}
+
+.sub-menu p {
+    width: 30%;
+    border: 1px solid white;
 }
 
 #head_search {
@@ -254,7 +358,7 @@ div {
     width: calc(50% - 1rem);
     margin: 0.5rem;
     height: fit-content;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .unit-content.mc-dc {
@@ -341,12 +445,32 @@ p.unit-body {
     color: white;
 }
 
+.unit-block.articles p {
+    /* border: 1px solid white; */
+    margin: auto;
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
 .unit-block.recipes {
     background-color: #D8D9DA;
 }
 
+.unit-block.recipes p {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
 .unit-block.community {
     background-color: #EFFBFF;
+}
+
+.unit-block.community p {
+    margin: auto;
+    text-align: center;
+    width: 60%;
 }
 
 .unit-block.community .full{
@@ -444,7 +568,7 @@ h2.category {
     display: block;
     background: none;
     background-color: #fff;
-    -webkit-box-flex: 1;
+    /* -webkit-box-flex: 1; */
     flex: 1 auto;
     position: relative;
     overflow: hidden;
@@ -489,10 +613,10 @@ div.content-actions {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    -webkit-box-pack: justify;
+    /* -webkit-box-pack: justify; */
     justify-content: space-between;
     padding: 10px;
-    -webkit-box-align: end;
+    /* -webkit-box-align: end; */
     align-items: flex-end;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -548,7 +672,7 @@ span.price {
     padding-bottom: 6rem;
     padding-right: 3rem;
     padding-left: 3rem;
-    -webkit-box-pack: center;
+    /* -webkit-box-pack: center; */
     justify-content: center;
 }
 
@@ -585,24 +709,11 @@ p.all-programs, p.all-programs a {
     padding-bottom: 3.2rem;
 }
 
-#content, footer, .fb-menu {
-    -webkit-transition: -webkit-transform 0.25s ease-out;
-    transition: -webkit-transform 0.25s ease-out;
-    -o-transition: transform 0.25s ease-out;
-    transition: transform 0.25s ease-out;
-    transition: transform 0.25s ease-out,-webkit-transform 0.25s ease-out;
-}
-
-article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
-    display: block;
-}
-
 footer {
     display: block;
 }
 
 .site__footer .container {
-    display: -webkit-box;
     display: flex;
 }
 
@@ -616,37 +727,14 @@ footer {
 .site__footer .brand {
     flex-basis: 42%;
     margin: 0px;
-    -webkit-box-pack: start;
     justify-content: flex-start;
 }
 
 .brand {
-    display: -webkit-box;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
     flex-direction: column;
-    -webkit-box-pack: center;
     justify-content: center;
 }
-/* 
-h1, h2, h3, h4, h5, h6 {
-    font-size: 1.6rem;
-    line-height: 1.2em;
-    font-weight: 400;
-    margin: 0 0 0.5em 0;
-    text-rendering: optimizelegibility;
-} */
-
-/* h2 {
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;    
-} */
 
 .brand.-dark a {
     background: url(https://cloudfront.fitnessblender.com/assets/img/logos/fb-logo-dark.svg);
@@ -657,7 +745,6 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
     width: 156px;
     height: 45px;
-    text-indent: -9999px;
     overflow: hidden;
 }
 
@@ -680,20 +767,70 @@ footer p {
 
 footer p {
     display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
 }
 
 footer .footer__nav {
     padding-bottom: 64px;
-    display: -webkit-box;
     display: flex;
-    -webkit-box-pack: justify;
     justify-content: space-between;
-    -webkit-box-flex: 1;
-    flex-grow: 1;
-    flex-basis: 58.33322%;
     padding-right: 5%;
+    text-transform: uppercase;
+}
+
+.footer__nav ul {
+    max-width: 33%;
+    font-size: 13px;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    line-height: 30px;
+    list-style: none;
+}
+
+.footer__nav ul a {
+    text-decoration: none;
+    color: #A7AABB;
+}
+
+.footer__nav ul a.demi {
+    color: white;
+}
+
+footer .container {
+    margin-top: -50px;
+}
+
+footer .container > h2 > p {
+    font-size: 13px;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    margin-top: -15px;
+}
+
+/* * CSS for last copyrights and social media div */
+div.end {
+    border-top: 1px solid #3a3d4d;
+    display: flex;
+    padding-top: 32px;
+}
+
+div.end p {
+    font-size: 13px;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+div.end a {
+    color: #A7AABB;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+div.end ul {
+    list-style: none;
+    display: flex;
+    margin: 0 0 0 440px;
+    padding-top: 16px;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 18px;
+    padding: 0 5px;
 }
