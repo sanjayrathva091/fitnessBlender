@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whats New | Finess Blender</title>
+    <style> 
+        #header {
+          width: 80%;
+          margin: auto;
+          padding: 40px;
+          /* border: 1px solid red; */
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+        }
+        #h1tag {
+          font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+            "Lucida Grande", sans-serif;
+          color: #212432;
+          font-size: 40px;
+          font-weight: 400;
+          margin-left: -4px;
+        }
+        #control {
+          display: flex;
+          justify-content: space-between;
+          /* border: 1px solid red; */
+        }
+        #control2 {
+          display: flex;
+          justify-content: space-between;
+          gap: 50px;
+          /* border: 1px solid red; */
+        }
+        #btn {
+          background: #4296cb;
+          border-color: transparent;
+          color: #fff;
+          text-transform: uppercase;
+  
+          padding: 12px 28px 10px;
+          cursor: pointer;
+          text-align: center;
+          font-size: 14px;
+          border-radius: 8px;
+          height: 50px;
+        }
+        #img {
+          margin-top: 10px;
+          width: 35px;
+          height: 35px;
+          cursor: pointer;
+        }
+        #sort {
+          color: #7b7f92;
+          display: block;
+          margin: 0px;
+          line-height: 1em;
+          text-transform: uppercase;
+          font-size: 13px;
+          font-weight: 500;
+          margin-top: 20px;
+          letter-spacing: 0.05em;
+          margin-right: -45px;
+        }
+        #form {
+          /* border: 1px solid red; */
+          margin-top: 10px;
+          padding: 0.4rem 1.2rem 0.4rem 0.4rem;
+          line-height: 1.1em;
+          font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+            "Lucida Grande", sans-serif;
+          border: none;
+          color: black;
+        }
+        #topic {
+          display: inline-block;
+          height: 7px;
+          width: 8px;
+          padding: 0px;
+          color: #4296cb;
+          font-size: 7px;
+        }
+  
+        .dropbtn {
+           margin: 50%;
+          border: none;
+          cursor: pointer;
+  
+        }
+  
+        .dropbtn:hover,
+        .dropbtn:focus {
+          background-color: #2980b9;
+        }
+  
+        .dropdown-content {
+          display: none;
+          border: 2.5px solid #2980b9;;
+          position: absolute;
+          background-color:white;
+          min-width: 160px;
+          overflow: auto;
+          font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          margin-top: 30px;
+           
+        }
+  
+        .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+        }
+  
+        .dropdown a:hover {
+          background-color: #ddd;
+        }
+  
+        .show {
+          display: block;
+        }
+        .dropdown-content{
+          padding: 20px;
+        }
+        #mid{
+          /* border: 1px solid red; */
+          display: flex;
+          
+          color: #7b7f92;
+      font-size: 11px;
+      margin: 0px;
+      letter-spacing: 0.042em;
+      font-weight: 500;
+     width: 80%;
+     margin: auto;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+     margin-top: 20px;
+        }
+        #discussion{
+          margin-right: 500px;
+          margin-left: 10px;
+        }
+        #postedin{
+          margin-right: 340px;
+        }
+        #replies{
+          margin-right: 80px;
+        }
+        #last{
+          width: 80%;
+     margin: auto;
+     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+     margin-top: 20px;
+     font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+            "Lucida Grande", sans-serif;
+          color: #212432;
+         
+        }
+        #container img{
+          /* border: 1px solid red; */
+          width: 55px;
+          height: 55px;
+          border-radius: 50%;
+          margin-top:10px;
+        }
+        #div1{
+          /* border: 1px solid red; */
+          display: flex;
+          width: 95%;
+          margin: auto;
+          font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+            "Lucida Grande", sans-serif;
+         
+        }
+        #div1>div{
+          margin-left: 35px;
+          font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+            "Lucida Grande", sans-serif;
+            /* color: #7b7f92; */
+            font-size: 13px;
+            
+        }
+        #title{
+          font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+            "Lucida Grande", sans-serif;
+          color: #212432;
+            
+        }
+        #div3{
+          /* border: 1px solid red; */
+          margin-left: 25px;
+         margin-top: 55px;
+         color: #4296cb;
+      font-weight: 400;
+      text-decoration: none;
+      font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+          
+          
+        }
+        #last{
+          display: flex;
+          /* border: 1px solid red; */
+        }
+        #div4{
+          margin-left: 125px;
+         margin-top: 60px;
+         color: #4296cb;
+      font-weight: 400;
+      text-decoration: none;
+      font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+        }
+         #last{
+          margin-bottom: 50px;
+         }
+      
+  
+      </style>
+  </head>
+  
+
+    <body>
+        <div id="header">
+          <h1 id="h1tag">Community</h1>
+          <div id="control">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">TOPICS</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#home">FB Team</a>
+                  <a href="#about">Workout</a>
+                  <a href="#contact">Nutrition</a>
+                  <a href="#contact">Community Tab</a>
+                  <a href="#contact">New To Fb</a>
+                  <a href="#contact">Customer Support Help</a>
+                </div>
+              </div>
+          
+           <div id="control2">
+              <button id="btn">Start a discussion</button>
+              <img
+                id="img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/1024px-Search_Icon.svg.png"
+              />
+              <h4 id="sort">Sort</h4>
+              <form id="form">
+                <select>
+                  <option value="newest">Newest First</option>
+                  <option value="updated">Last update</option>
+                  <option value="popular">Most Popular</option>
+                  <option value="update">Oldest First</option>
+                </select>
+              </form>
+            </div>
+          </div>
+        </div>
+        </div>
+    
+        <div id="mid">
+             <h3 id="discussion">DISCUSSIONS</h3>
+             <h3 id="postedin">POSTED IN</h3>
+             <h3 id="replies">REPLIES</h3>
+             <h3 id="likes">LIKES</h3>
+        </div>
+        <div id="last">
+        <div id="container"></div>
+        <div id="container2"></div>
+        <div id="container3"></div>
+        <div id="container4"></div>
+        </div>
+      
+
+  </body>
+</html>
+<script>
+     
+ 
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+    
+     
+    window.onclick = function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    
+   </script>
+   <script>
+       let data=[
+           {
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"New workout:Lower body workout with cardio ",
+               desc:"By keli s -22 hours ago",
+               posted:"Workouts / New Releases",
+               replies:2,
+               likes:9
+           },
+           {
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"FB Fit30",
+               desc:"By cat -26 min ago" ,
+               posted:"Workouts / New Releases" ,
+               replies:2,
+               likes:2
+           },{
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"HKS(Healthy,Kind Support)",
+               desc:"By cat -3 Hours ago" ,
+               posted:"Community Chat / FBFamily Support & Motivation",
+               replies:0,
+               likes:0
+           },
+           {
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"Community Chat / Miscellaneous",
+    
+               desc:"By lvett K -3 Hours ago" ,
+               posted:"FB Team / FB Team Posts",
+               replies:1,
+               likes:8
+   
+   
+           },
+           {
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"Keyla Tuesday Thoughts",desc:"By Toasty — 21 hours ago",
+               posted:"Community Chat / FBFamily Support & Motivation" ,
+               replies:1,
+               likes:3
+           },
+           {
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"Perspiration Plas August 23rd,2022",
+               desc:"By Martine — 22 hours ago" ,
+               posted:"Community Chat / FBFamily Support & Motivation" ,
+               replies:5,
+               likes:6
+           },
+           {
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"Daily Check-in: Tuesday, Dogust 23rd ",
+               desc:"By Kim🕊️🇺🇦 — 22 hours ago" ,
+               posted:"Workouts / New Releases",
+               replies:36,
+               likes:13
+           },
+           {
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"Daily Check-in: Tuesday, Dogust 23rd ",
+               desc:"By Martine — 1 day ago",
+               posted:"Workouts / New Releases",
+               posted:"Community Chat / FBFamily Support & Motivation" ,
+               replies:7,
+               likes:26
+           },
+           {
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"Achievements",
+               desc:"By Marisa — 1 day ago",
+               posted:"Workouts / New Releases",
+               replies:24,
+               likes:3
+           },
+           {
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"By Kim🕊️🇺🇦 — 2 days ago",
+               desc:"By cat -26 min ago" ,
+               posted:"Community Chat / FBFamily Support & Motivation",
+               replies:13,
+               likes:4
+           },
+           {
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"FB Fit30",
+               desc:"Workouts / Workout Complete Check In" ,
+               posted:"Workouts / New Releases",
+               replies:10,
+               likes:19
+           },
+           {
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"HKS (Healthy, Kind Support) Accountability Group",
+               desc:"By cat -26 min ago",
+               posted:"Community Chat / FBFamily Support & Motivation",
+               replies:14,
+               likes:1
+           },
+           {
+            image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"FB Fit30",
+               desc:"By cat -26 min ago" ,
+               posted:"Workouts / New Releases",
+               replies:4,
+               likes:16
+           },
+           {
+               image:"https://d3scpmvvk35ffs.cloudfront.net/avatars/8/38fe055472481a272eb11f6e0dd16700.jpg?t=1592269280",
+               title:"By Miriki — 3 days ago",
+               desc:"By Kathryn — 4 days ago" ,
+               posted:"FB Team / FB Team Posts",
+               replies:17,
+               likes:45
+           }
+           
+       ]
+   </script>
+   <script>
+       
+       let container=document.getElementById("container")
+       let container2=document.getElementById("container2")
+       let container3=document.getElementById("container3")
+       let container4=document.getElementById("container4")
+       append(data)
+       function append(data){
+       
+           data.forEach(function(elem,index){
+   console.log(data)
+   let div=document.createElement("div")
+   div.setAttribute("id","div1")
+   let image=document.createElement("img")
+   image.src=elem.image
+   let div2=document.createElement("div")
+   let title=document.createElement("h2")
+   title.setAttribute("id","title")
+   title.innerText=elem.title;
+   let desc=document.createElement("p")
+   desc.innerText=elem.desc
+   let div3=document.createElement("div")
+   div3.setAttribute("id","div3")
+   div3.innerText=elem.posted
+   
+   let div4=document.createElement("div")
+   div4.setAttribute("id","div4")
+   div4.innerText=elem.replies
+   
+   let div5=document.createElement("div")
+   div5.setAttribute("id","div4")
+   div5.innerText=elem.likes
+   
+   div2.append(title,desc)
+   div.append(image,div2)
+   container.append(div)
+   container2.append(div3)
+   container3.append(div4)
+   container4.append(div5)
+   
+   })
+   
+       }
+   </script>
