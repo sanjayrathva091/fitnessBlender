@@ -6,9 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="join.css">
     
-
-
-    </style>
 </head>
 <body>
     <h1>Join</h1>
@@ -38,6 +35,7 @@
             <input type="text" placeholder="Username" id="user">
             <input type="password" placeholder="Password" id="pass">
             <input type="password" placeholder="Confirm Password" id="cpass">
+            <input type="submit" value="JOIN" id="join">
         </form>
         </div>
         <div id="right">
@@ -74,8 +72,41 @@
     <div id="policy">
         <input type="checkbox" id="checkbox"><p>I agree to the Fitness Blender <a href="">terms of service</a> and <a href="">privacy policy</a></p>
     </div>
-<button>JOIN</button>
+
 <p id="already">Already a member <a href="signin.html">signIn</a></p>
 </body>
 </html>
-<script src="join.js"></script>
+<script>
+
+let form = document.querySelector("form")
+
+let arr = JSON.parse(localStorage.getItem("array")) || []
+
+form.addEventListener("submit", function(event){
+    event.preventDefault()
+
+    let obj= {
+        
+        firstname:form.fname.value,
+        lastname:form.lname.value,
+        emails:form.email.value,
+        username:form.user.value,
+        password:form.pass.value,
+        cnfmpassword:form.cpass.value,
+
+    }
+    let flag="no"
+    if(obj.firstname=="" || obj.lastname=="" || obj.emails=="" || obj.username=="" || obj.password=="" || obj.cnfmpassword==""){
+        flag="yes"
+    }
+    if(flag=="yes"){
+        alert("Please Fill All feild")
+    }
+    else{
+        arr.push(obj)
+        alert("sign up successfull")
+        localStorage.setItem("array", JSON.stringify(arr))
+        window.location.href="signin.html"
+    }
+})
+</script>
