@@ -81,6 +81,7 @@ body {
     background-color: #212432;
     width: auto;
     height: 170px;
+    padding: 0 20px;
 }
 
 #head_programs {
@@ -102,6 +103,7 @@ body {
     background-color: #212432;
     width: auto;
     height: 170px;
+    padding: 0 20px;
 }
 
 #head_healthy_living {
@@ -123,6 +125,7 @@ body {
     background-color: #212432;
     width: auto;
     height: 170px;
+    padding: 0 20px;
 }
 
 #head_community {
@@ -143,7 +146,8 @@ body {
     color: white;
     background-color: #212432;
     width: auto;
-    height: 170px;  
+    height: 170px;
+    padding: 0 20px;
 }
 
 #head_about {
@@ -165,6 +169,7 @@ body {
     background-color: #212432;
     width: auto;
     height: 170px;
+    padding: 0 20px;
 }
 
 #head_store {
@@ -208,22 +213,24 @@ div #head_loginout .sub-menu {
     z-index: 1000;
     color: white;
     background-color: #212432;
-    padding: 0 20px;
+    padding: 0 10px;
     height: 170px;
 }
 
 div #head_loginout:hover .sub-menu {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .sub-menu h3 {
     width: fit-content;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .sub-menu p {
-    width: 30%;
-    border: 1px solid white;
+    width: 60%;
+    text-align: left;
+    /* border: 1px solid white; */
 }
 
 #head_search {
