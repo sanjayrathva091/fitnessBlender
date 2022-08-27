@@ -4,7 +4,7 @@ let display=document.getElementById("product-container");
 
 
 
-
+append(data);
 function append(data){
    display.innerHTML=null;
     data.forEach(function(ele,index){
