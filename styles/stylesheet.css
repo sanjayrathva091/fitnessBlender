@@ -1,0 +1,843 @@
+/* * CSS style code here */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#new_update > div {
+    height: 43px;
+    padding: 12px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-end;
+    color: #212432;
+    background-color: #4296CB26;
+}
+
+#new_update > div > div:first-of-type {
+    width: 62%;
+    font-size: 13px;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;;
+}
+
+#new_update > div > div:first-of-type span {
+    color: #4296CB;
+}
+
+#new_update > div > div {
+    height: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.material-symbols-outlined {
+    color: #4296CB;
+}
+
+#navbar {
+    height: 110px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;;
+    padding: 0 30px;
+    box-sizing: border-box;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#navbar > div, #navbar > div > div {
+    /* border: 1px solid black; */
+    width: auto;
+    color: #212432;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#logo_header img {
+    width: 156px;
+    /* border: 1px solid black; */
+}
+
+#head_workouts {
+    display: flex;
+    padding: 33px 9px;
+    box-sizing: border-box;
+}
+
+#head_workouts div {
+    display: none;
+}
+
+#head_workouts:hover> div {
+    display: block;
+    position: absolute;
+    top: 110px;
+    z-index: 1000;
+    color: white;
+    background-color: #212432;
+    width: auto;
+    height: 170px;
+    padding: 0 20px;
+}
+
+#head_programs {
+    display: flex;
+    padding: 33px 9px;
+    box-sizing: border-box;
+}
+
+#head_programs > div {
+    display: none;
+}
+
+#head_programs:hover > div {
+    display: block;
+    position: absolute;
+    top: 110px;
+    z-index: 1000;
+    color: white;
+    background-color: #212432;
+    width: auto;
+    height: 170px;
+    padding: 0 20px;
+}
+
+#head_healthy_living {
+    display: flex;
+    padding: 33px 9px;
+    box-sizing: border-box;
+}
+
+#head_healthy_living > div {
+    display: none;
+}
+
+#head_healthy_living:hover > div {
+    display: block;
+    position: absolute;
+    top: 110px;
+    z-index: 1000;
+    color: white;
+    background-color: #212432;
+    width: auto;
+    height: 170px;
+    padding: 0 20px;
+}
+
+#head_community {
+    display: flex;
+    padding: 33px 9px;
+    box-sizing: border-box;
+}
+
+#head_community > div {
+    display: none;
+}
+
+#head_community:hover > div {
+    display: block;
+    position: absolute;
+    top: 110px;
+    z-index: 1000;
+    color: white;
+    background-color: #212432;
+    width: auto;
+    height: 170px;
+    padding: 0 20px;
+}
+
+#head_about {
+    display: flex;
+    padding: 33px 9px;
+    box-sizing: border-box;
+}
+
+#head_about > div {
+    display: none;
+}
+
+#head_about:hover > div {
+    display: block;
+    position: absolute;
+    top: 110px;
+    z-index: 1000;
+    color: white;
+    background-color: #212432;
+    width: auto;
+    height: 170px;
+    padding: 0 20px;
+}
+
+#head_store {
+    padding: 33px 16px;
+    box-sizing: border-box;
+}
+
+#head_membership {
+    padding: 0 16px;
+    box-sizing: border-box;
+}
+
+#head_membership p {
+    color: #4296CB;
+}
+
+#head_loginout {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 21px 32px 30px;
+    box-sizing: border-box;
+    border-left: 1px solid rgba(227,235,238,0.5);
+    border-right: 1px solid rgba(227,235,238,0.5);
+    height: 100%;
+}
+
+#head_loginout > div, #head_loginout > div p, #head_loginout > div span {
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+#head_loginout div+div {
+    display: flex;
+}
+
+div #head_loginout .sub-menu {
+    display: none;
+    position: absolute;
+    top: 110px;
+    z-index: 1000;
+    color: white;
+    background-color: #212432;
+    padding: 0 10px;
+    height: 170px;
+}
+
+div #head_loginout:hover .sub-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-menu h3 {
+    width: fit-content;
+    /* border: 1px solid white; */
+}
+
+.sub-menu p {
+    width: 60%;
+    text-align: left;
+    /* border: 1px solid white; */
+}
+
+#head_search {
+    padding: 0px 15px 0px 20px;
+    box-sizing: border-box;
+}
+
+.material-symbols-outlined {
+    padding: 8px 0;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 700,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.content-group {
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    background: linear-gradient(to bottom right,#3d97ce 0%,#12debb 100%);
+    color: #fff;
+    justify-content: center;
+}
+
+.content-group > div {
+    display: flex;
+}
+
+.unit-primary > div {
+    width: 50%;
+    margin: auto;
+    margin-top: 160px;
+}
+
+.unit-primary > div h2 {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    line-height: 1.2em;
+    font-weight: 400;
+    text-rendering: optimizelegibility;
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.unit-primary > div p {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    margin: 1rem auto;
+    padding: 0;
+    line-height: 1.6em;
+    position: relative;
+    z-index: 3;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.unit-cta {
+    width: fit-content;
+    border-radius: 4px;
+    padding: 16px 32px;
+    background-color: #212432;
+}
+
+.unit-cta a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.midsec {
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+
+.content-group .group.-edge {
+    width: 100%;
+}
+
+.-flex.-center {
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.-flex {
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+div {
+    display: block;
+}
+
+.unit-block.passes {
+    background: -webkit-linear-gradient(320deg,#ece6f8 0%,#f9e7f6 100%);
+    background: -o-linear-gradient(320deg,#ece6f8 0%,#f9e7f6 100%);
+    background: linear-gradient(130deg,#ece6f8 0%,#f9e7f6 100%);
+}
+
+.unit-block.full {
+    width: 100%;
+}
+
+.unit-block {
+    position: relative;
+    width: calc(50% - 1rem);
+    margin: 0.5rem;
+    height: fit-content;
+    /* border: 1px solid red; */
+}
+
+.unit-content.mc-dc {
+    max-width: 420px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.unit-title {
+    margin: 0 0 1rem 0;
+    font-size: 2.5rem;
+    letter-spacing: -0.02em;
+    position: relative;
+    z-index: 2;
+    font-weight: normal;
+}
+
+.fbplus {
+    font-weight: bold;
+}
+
+.fbplus .fb {
+    color: #212432;
+    font-size: 2.5rem;
+}
+
+span.plus {
+    color: #4296CB;
+}
+
+.unit-body {
+    line-height: 1.6em;
+    color: #4e5262;
+}
+
+.unit-body + div {
+    margin-top: 50px;
+}
+
+.unit-body + .btn a {
+    width: fit-content;
+    color: white;
+    background-color: #212432;
+    border-radius: 5px;
+    padding: 16px 32px;
+    text-decoration: none;
+}
+
+.wide {
+    text-align: center;
+    max-width: 100%;
+}
+
+/* workouts */
+
+.unit-block.workouts {
+    background: #f0f4f6;
+}
+
+p.unit-body {
+    color: #4e5262;
+    margin: 0;
+}
+
+.unit-link .link {
+    font-size: 16px;
+    color: #4296cb;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.unit-content.mc-dc  {
+    max-width: max-content;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.mc-dc img {
+    width: 100%;
+}
+
+.unit-block.articles {
+    background: #000;
+    color: white;
+}
+
+.unit-block.articles p {
+    /* border: 1px solid white; */
+    margin: auto;
+    color: white;
+    text-align: center;
+    width: 80%;
+}
+
+.unit-block.recipes {
+    background-color: #D8D9DA;
+}
+
+.unit-block.recipes p {
+    margin: auto;
+    text-align: center;
+    width: 80%;
+}
+
+.unit-block.community {
+    background-color: #EFFBFF;
+}
+
+.unit-block.community p {
+    margin: auto;
+    text-align: center;
+    width: 60%;
+}
+
+.unit-block.community .full{
+    margin-top: 0;
+}
+
+.unit-block.community img {
+    height: 95%;
+}
+
+.group.-full {
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    width: calc(100% - 2rem);
+    max-width: 1200px;
+    margin: auto;
+}
+
+.heading.-primary {
+    font-size: 40px;
+    text-align: left;
+    margin: 2rem 0 2rem 0;
+    padding: 0;
+    position: relative;
+    line-height: 1.2em;
+    font-weight: 400;
+    margin: 0 0 0.5em 0;
+}
+
+.body {
+    margin: 16px 0;
+    padding: 0;
+    font-size: 1rem;
+    color: #4e5262;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+
+div.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem -4px 2rem -4px;
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem -4px 2rem -4px;
+}
+
+div.card {
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    width: 25%;
+    padding: 0.02rem;
+}
+
+h2.category {
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    font-size: 1rem;
+    line-height: 1.2em;
+    margin: 0 0 0.5em 0;
+    text-rendering: optimizelegibility;
+    padding: 0rem 0 0.3rem 0;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.contents {
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 80%;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    color: #212432;
+    font-weight: 400;
+    text-decoration: none;
+    display: block;
+    background: none;
+    background-color: #fff;
+    /* -webkit-box-flex: 1; */
+    flex: 1 auto;
+    position: relative;
+    overflow: hidden;
+    min-height: 360px;
+}
+
+div.content-details {
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 100%;
+    word-wrap: break-word;
+    color: #212432;
+    font-weight: 400;
+    box-sizing: border-box;
+    padding: 28px 24px;
+    position: relative;
+}
+
+span.eyebrow.demi.caps {
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    word-wrap: break-word;
+    color: #4296cb;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    display: block;
+    padding-bottom: 7px;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+div.content-actions {
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 100%;
+    word-wrap: break-word;
+    color: #4296cb;
+    font-weight: 400;
+    box-sizing: border-box;
+    top: 5rem;
+    right: 1rem;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    /* -webkit-box-pack: justify; */
+    justify-content: space-between;
+    padding: 10px;
+    /* -webkit-box-align: end; */
+    align-items: flex-end;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+span.price {
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    padding: 1rem 0 1rem 0;
+    display: block;
+    color: #222533;
+    font-weight: bold;
+    padding-left: 4px;
+    text-align: left;
+    position: relative;
+    padding-bottom: 0;
+    font-size: 12px;
+}
+
+.exclusive-item {
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #3cdbb8;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+    text-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+    padding: 0.5rem 0.6rem;
+    border-radius: 0 0 0 6px;
+    border-bottom: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.-bg-02 {
+    color: #212432;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1px;
+    background: #f0f4f6;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    /* -webkit-box-pack: center; */
+    justify-content: center;
+}
+
+div.content-item.article-item img {
+    width: 100%;
+}
+
+p.all-programs, p.all-programs a {
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    word-wrap: break-word;
+    box-sizing: border-box;
+    color: #4296CB;
+    margin: 0;
+    font-size: 16px;
+    line-height: 3.2rem;
+    padding: 0;
+    text-decoration: none;
+}
+
+.category+div {
+    border: 3px solid #f0f4f6;
+}
+
+.category+div:hover {
+    border: 3px solid #4296CB;
+    transition: border 1000ms;
+}
+
+/* * CSS for footer section features */
+
+.site__footer {
+    background: #212432;
+    padding-top: 8rem;
+    padding-bottom: 3.2rem;
+}
+
+footer {
+    display: block;
+}
+
+.site__footer .container {
+    display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1340px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.site__footer .brand {
+    flex-basis: 42%;
+    margin: 0px;
+    justify-content: flex-start;
+}
+
+.brand {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.brand.-dark a {
+    background: url(https://cloudfront.fitnessblender.com/assets/img/logos/fb-logo-dark.svg);
+}
+
+.brand a {
+    background: url(https://cloudfront.fitnessblender.com/assets/img/logos/fb-logo-dark.svg);
+    display: block;
+    width: 156px;
+    height: 45px;
+    overflow: hidden;
+}
+
+.site__footer p {
+    font-size: 1.3rem;
+    color: #7b7f92;
+    padding: 0px;
+}
+
+footer p, footer p.-maintain-size {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    padding: 0 0 3.2rem;
+}
+
+footer p {
+    color: #4e5262;
+    margin: 0;
+}
+
+footer p {
+    display: block;
+}
+
+footer .footer__nav {
+    padding-bottom: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5%;
+    text-transform: uppercase;
+}
+
+.footer__nav ul {
+    max-width: 33%;
+    font-size: 13px;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    line-height: 30px;
+    list-style: none;
+}
+
+.footer__nav ul a {
+    text-decoration: none;
+    color: #A7AABB;
+}
+
+.footer__nav ul a.demi {
+    color: white;
+}
+
+footer .container {
+    margin-top: -50px;
+}
+
+footer .container > h2 > p {
+    font-size: 13px;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    margin-top: -15px;
+}
+
+/* * CSS for last copyrights and social media div */
+div.end {
+    border-top: 1px solid #3a3d4d;
+    display: flex;
+    padding-top: 32px;
+}
+
+div.end p {
+    font-size: 13px;
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+}
+
+div.end a {
+    color: #A7AABB;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+div.end ul {
+    list-style: none;
+    display: flex;
+    margin: 0 0 0 440px;
+    padding-top: 16px;
+}
+
+.fa-brands {
+    color: white;
+    font-size: 18px;
+    padding: 0 5px;
+}
