@@ -1,0 +1,207 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    /* font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif; */
+    /* -webkit-font-smoothing: antialiased; */
+    /* background: #fff; */
+    /* color: #212432;  */
+    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+   
+}
+
+#head1 {
+    height: 500px;
+    width: 100%;
+    background-image: url(https://cloudfront.fitnessblender.com/assets/img/fbplus/routines.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+.head_content{
+    padding: 170px 0px 0px 300px;
+    font-size: large;
+}
+.head_content h1{
+    font-size: 2.5rem ;
+}
+#fbplus .fb {
+    color: rgba(255,255,255,0.5);
+    font-size: .7em;
+}
+#fbplus .plus {
+    color: #ffffff;
+    font-size: .7em;
+    /* text-align: center; */
+}
+#fbplus .aa {
+    font-size: 0.2em;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    background: #3cdbb8;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    vertical-align: top;
+    white-space: nowrap;
+    text-align: center;
+    /* border:2px solid red; */
+    /* display: block; */
+}
+.head_content >h1{
+    margin-bottom: 24px;   
+    /* margin-top: 3rem; */
+    /* letter-spacing: 1px; */
+    /* margin-bottom: 20px; */
+    
+}
+.head_content >a{
+    text-decoration: none;
+    border: 0px;
+    font-size: 10px;
+}
+
+.head_content #fb_btn{
+    text-decoration: none;
+    border: 0px;
+    /* margin-top: 50px; */
+    color: white;
+    border:1px solid white;
+    border-radius: 4px;
+    font-size: 1.6rem;
+    /* margin-top: 40px; */
+    padding: 5px;
+   
+}
+.head_content #fb_btn:hover{
+border:1px solid #4296cb;
+}
+#begainer,#custom_workout,#perroutine{
+    border-top: 1px solid #e3ebee;
+    border-bottom: 1px solid #e3ebee;
+}
+#quickbar{
+    border-top: 1px solid #e3ebee;
+    border-bottom: 1px solid #e3ebee;
+    color: #4296cb;
+}
+#quickbar a{
+text-decoration: none;
+color: #4296cb;
+}
+.quickele{
+    width:20%;
+    margin: auto;
+}
+.elequick{
+    letter-spacing: 0.1em;
+    font-size: .9rem;
+    display: inline-block;
+    padding: 1rem 1rem;
+}
+.elequick:hover{
+background-color: #4296cb;
+color: white;
+}
+#preroutine{
+    border-top: 1px solid #e3ebee;
+    border-bottom: 1px solid #e3ebee;
+}
+.precontiner{
+    /* border:2px solid red; */
+    display: flex;
+    padding:0px 40px;
+
+}
+.image img{
+    height: 650px;
+}
+.text{
+    margin:65px;
+    padding:70px;
+
+}
+.text h2{
+    font-size: 2.3rem;
+    color: black;
+    margin-bottom: 50px;
+}
+.text p{
+    color:gray;
+    line-height: 2rem;
+    font-size: 16px;
+}
+#routinesFeature{
+    background-color: #f0f4f6;
+}
+.innerblock{
+    width:70%;
+    margin:auto;
+    padding: 20px;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+#title{
+    /* margin:40px 0px; */
+    padding:50px 0px;
+    font-size: 30px;
+    font-weight: 400;
+    color: black;
+   
+}
+#heading{
+    display: flex;
+    padding:5px;
+    justify-content: space-between;
+    border-bottom: 2px solid #e3ebee;
+    vertical-align: bottom;
+}#container p{
+    border-top: 1px solid #e3ebee;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+#tlink{
+    text-align: center;
+    color: #4296cb;
+}
+#tlink a{
+    text-decoration: none;
+    font-size: small;
+    color: #4296cb;
+}
+#tlink p{
+    line-height:10px;
+}
+#FAQS{
+    background: #313443;
+    color: #fff;
+}
+#faqtitle h2{
+    padding:50px 0px;
+    font-size: 30px;
+    font-weight: 400;
+}
+#faqcontainer h2{
+    font-size:25px ;
+    line-height: 50px;
+}
+#faqcontainer p{
+    color: rgb(155, 154, 154);
+    font-size:small ;
+}
+
+#flink{
+    text-align: center;
+    color:white;
+}
+#flink a{
+    text-decoration: none;
+    font-size: small;
+    color:white;
+}
+#flink p{
+    line-height:10px;
+}
