@@ -1,6 +1,5 @@
-
-
-
+let cartArr=JSON.parse(localStorage.getItem("cartData"))||[];
+console.log(cartArr)
 
 function addTocart(event){
 
@@ -15,6 +14,7 @@ cartArr.push(obj);
 localStorage.setItem("cartData",JSON.stringify(cartArr));
 }
 
-let cartArr=JSON.parse(localStorage.getItem("cartData"))||[];
+
+
 
 
