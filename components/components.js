@@ -1,7 +1,7 @@
 function myheader() {
-  return `<div id="logo_header">
+  return `<a href="./index.html"><div id="logo_header">
   <img src="https://cloudfront.fitnessblender.com/assets/img/logos/fb-logo.svg" alt="logo">
-</div>
+</div></a>
 <div id="head_workouts">
   <p>WORKOUTS</p>
   <span class="material-symbols-outlined">arrow_drop_down</span>

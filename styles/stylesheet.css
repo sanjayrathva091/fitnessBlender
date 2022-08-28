@@ -388,12 +388,17 @@ div #head_loginout:hover .sub-menu {
     padding: 0.5rem;
 }
 
+.midsec .full .para {
+    width: 37%;
+    margin: auto;
+}
+
 .content-group .group.-edge {
     width: 100%;
 }
 
 .-flex.-center {
-    -webkit-box-pack: center;
+    /* -webkit-box-pack: center; */
     justify-content: center;
 }
 
@@ -491,6 +496,12 @@ p.unit-body {
     margin: 0;
 }
 
+.workouts .para-work {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
 .unit-link .link {
     font-size: 16px;
     color: #4296cb;
@@ -519,6 +530,11 @@ p.unit-body {
     color: white;
     text-align: center;
     width: 80%;
+}
+
+.unit-block .para-prog {
+    width: 80%;
+    margin: auto;
 }
 
 .unit-block.recipes {
