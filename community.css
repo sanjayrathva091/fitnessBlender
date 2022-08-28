@@ -1,213 +1,278 @@
- 
-      #header {
-        width: 80%;
-        margin: auto;
-        padding: 40px;
-        /* border: 1px solid red; */
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-      }
-      #h1tag {
-        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
-          "Lucida Grande", sans-serif;
-        color: #212432;
-        font-size: 40px;
-        font-weight: 400;
-        margin-left: -4px;
-      }
-      #control {
-        display: flex;
-        justify-content: space-between;
-        /* border: 1px solid red; */
-      }
-      #control2 {
-        display: flex;
-        justify-content: space-between;
-        gap: 50px;
-        /* border: 1px solid red; */
-      }
-      #btn {
-        background: #4296cb;
-        border-color: transparent;
-        color: #fff;
-        text-transform: uppercase;
+ body,
+html {
+  margin: 0;
+  padding: 0;
+}
 
-        padding: 12px 28px 10px;
-        cursor: pointer;
-        text-align: center;
-        font-size: 14px;
-        border-radius: 8px;
-        height: 50px;
-      }
-      #img {
-        margin-top: 10px;
-        width: 35px;
-        height: 35px;
-        cursor: pointer;
-      }
-      #sort {
-        color: #7b7f92;
-        display: block;
-        margin: 0px;
-        line-height: 1em;
-        text-transform: uppercase;
-        font-size: 13px;
-        font-weight: 500;
-        margin-top: 20px;
-        letter-spacing: 0.05em;
-        margin-right: -45px;
-      }
-      #form {
-        /* border: 1px solid red; */
-        margin-top: 10px;
-        padding: 0.4rem 1.2rem 0.4rem 0.4rem;
-        line-height: 1.1em;
-        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
-          "Lucida Grande", sans-serif;
-        border: none;
-        color: black;
-      }
-      #topic {
-        display: inline-block;
-        height: 7px;
-        width: 8px;
-        padding: 0px;
-        color: #4296cb;
-        font-size: 7px;
-      }
+.container {
+  max-width: 1300px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+#header > .container {
+  /* border: 1px solid red; */
+  padding: 25px;
+}
 
-      .dropbtn {
-         margin: 50%;
-        border: none;
-        cursor: pointer;
+#header {
+  /* border: 1px solid red; */
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 25px;
+}
+#h1tag {
+  font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+    "Lucida Grande", sans-serif;
+  color: #212432;
+  font-size: 40px;
+  font-weight: 400;
+  padding: 0 20px;
+  margin: 0;
+}
+#control {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid red; */
+}
+#control2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  /* border: 1px solid red; */
+}
+#btn {
+  background: #4296cb;
+  border-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
 
-      }
+  padding: 12px 28px 10px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 14px;
+  border-radius: 8px;
+  height: 50px;
+}
+#img {
+  margin-top: 10px;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+#sort {
+  color: #7b7f92;
+  display: block;
+  margin: 0px;
+  line-height: 1em;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 20px;
+  letter-spacing: 0.05em;
+  margin-right: -45px;
+}
+#form {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  padding: 0.4rem 1.2rem 0.4rem 0.4rem;
+  line-height: 1.1em;
+  font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+    "Lucida Grande", sans-serif;
+  border: none;
+  color: black;
+}
+#topic {
+  display: inline-block;
+  height: 7px;
+  width: 8px;
+  padding: 0px;
+  color: #4296cb;
+  font-size: 7px;
+}
 
-      .dropbtn:hover,
-      .dropbtn:focus {
-        background-color: #2980b9;
-      }
+.dropbtn {
+  margin: 50%;
+  border: none;
+  cursor: pointer;
+}
 
-      .dropdown-content {
-        display: none;
-        border: 2.5px solid #2980b9;;
-        position: absolute;
-        background-color:white;
-        min-width: 160px;
-        overflow: auto;
-        font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-        margin-top: 30px;
-         
-      }
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
 
-      .dropdown-content a {
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-      }
+.dropdown-content {
+  display: none;
+  border: 2.5px solid #2980b9;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  overflow: auto;
+  font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+    "Lucida Grande", sans-serif;
+  /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
+  margin-top: 30px;
+}
 
-      .dropdown a:hover {
-        background-color: #ddd;
-      }
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+    "Lucida Grande", sans-serif;
+}
 
-      .show {
-        display: block;
-      }
-      .dropdown-content{
-        padding: 20px;
-      }
-      #mid{
-        /* border: 1px solid red; */
-        display: flex;
-        
-        color: #7b7f92;
-    font-size: 11px;
-    margin: 0px;
-    letter-spacing: 0.042em;
-    font-weight: 500;
-   width: 80%;
-   margin: auto;
-   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-   margin-top: 20px;
-      }
-      #discussion{
-        margin-right: 500px;
-        margin-left: 10px;
-      }
-      #postedin{
-        margin-right: 340px;
-      }
-      #replies{
-        margin-right: 80px;
-      }
-      #last{
-        width: 80%;
-   margin: auto;
-   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-   margin-top: 20px;
-   font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
-          "Lucida Grande", sans-serif;
-        color: #212432;
-       
-      }
-      #container img{
-        /* border: 1px solid red; */
-        width: 55px;
-        height: 55px;
-        border-radius: 50%;
-        margin-top:10px;
-      }
-      #div1{
-        /* border: 1px solid red; */
-        display: flex;
-        width: 95%;
-        margin: auto;
-        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
-          "Lucida Grande", sans-serif;
-       
-      }
-      #div1>div{
-        margin-left: 35px;
-        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
-          "Lucida Grande", sans-serif;
-          /* color: #7b7f92; */
-          font-size: 13px;
-          
-      }
-      #title{
-        font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
-          "Lucida Grande", sans-serif;
-        color: #212432;
-          
-      }
-      #div3{
-        /* border: 1px solid red; */
-        margin-left: 25px;
-       margin-top: 55px;
-       color: #4296cb;
-    font-weight: 400;
-    text-decoration: none;
-    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-        
-        
-      }
-      #last{
-        display: flex;
-        /* border: 1px solid red; */
-      }
-      #div4{
-        margin-left: 125px;
-       margin-top: 60px;
-       color: #4296cb;
-    font-weight: 400;
-    text-decoration: none;
-    font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
-      }
-       #last{
-        margin-bottom: 50px;
-       }
-    
+.dropdown a:hover {
+  background-color: #ddd;
+}
 
-    
+.show {
+  display: block;
+}
+.dropdown-content {
+  padding: 20px;
+}
+.mid {
+  /* border: 1px solid red; */
+  display: flex;
+
+  color: #7b7f92;
+  font-size: 11px;
+  margin: 0px;
+  letter-spacing: 0.042em;
+  font-weight: 500;
+}
+.discussion {
+  flex-basis: 50%;
+}
+.postedin {
+  flex-basis: 25%;
+}
+.replies {
+  flex-basis: 15%;
+}
+.likes {
+  flex-basis: 10%;
+}
+
+.list-item {
+  display: flex;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+    "Lucida Grande", sans-serif;
+  font-weight: 400;
+}
+.list-item .discussion {
+  flex-basis: 50%;
+  display: flex;
+  font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+    "Lucida Grande", sans-serif;
+  font-weight: 400;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.list-item .discussion img {
+  height: 75px;
+  width: 75px;
+  margin-right: 100px;
+
+  border-radius: 50%;
+}
+.list-item .posted-in {
+  flex-basis: 25%;
+  font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+    "Lucida Grande", sans-serif;
+  font-weight: 400;
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+  /* justify-content: center; */
+}
+.list-item .likes {
+  flex-basis: 15%;
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: center;
+}
+.list-item .replies {
+  width: 10%;
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: center;
+}
+ul {
+  margin: 0px;
+  padding: 0px;
+}
+.dropdown-2 {
+  display: none;
+  position: absolute;
+  top: 78px;
+  width: 350px;
+  font-weight: 400;
+  padding: 40px;
+  background-color: white;
+  border: 2.5px solid #4296cb;
+  font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+    "Lucida Grande", sans-serif;
+  color: #7b7f92;
+  font-weight: 400;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  /* margin-top: 50px; */
+}
+
+.dropdown-2 .child-dropdown {
+  display: none;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  padding: 40px;
+  font-weight: 400;
+  width: 400px;
+  font-family: "Maison Neue", "Helvetica Neue", Helvetica, Arial,
+    "Lucida Grande", sans-serif;
+  background-color: white;
+  border: 2.5px solid #4296cb;
+}
+.dropdown-2 > li:hover .child-dropdown {
+  display: block;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-2.show {
+  display: block;
+}
+.dropdown-2 > li {
+  list-style: none;
+  /* border: 1px solid red; */
+
+  padding: 10px;
+  width: 100%;
+}
+.child-dropdown > li {
+  list-style: none;
+  text-decoration: none;
+  /* border: 1px solid red; */
+  padding: 10px;
+  width: 100%;
+}
+.container > .mid {
+  width: 90%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  margin-bottom: 0.5px;
+}
+.container > .list {
+  width: 90%;
+  margin: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
