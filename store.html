@@ -3,13 +3,20 @@
 <head>
   
     <link href="https://cloudfront.fitnessblender.com/assets/bundle/styles-9378f963f06d9c3bf501.css" rel="stylesheet">
-   <link rel="stylesheet" href="./style/store.css">
+   <link rel="stylesheet" href="./styles/store.css">
+   <!-- * CSS for header and footer by sanhay -->
+   <link rel="stylesheet" href="./styles/stylesheet.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <!-- * CSS for header and footer ended here -->
     <title>Document</title>
 </head>
 <body>
     <div id="whole-container">
-    
-    <div id="Header">
+    <!-- * navbar and header added here -->
+    <div id="navbar">
 
     </div>
     <br>
@@ -30,60 +37,60 @@
     <div id="Passes">
 
     <div class="passes-class">
-        <img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-16-1-day-pass-a272.jpg" alt="1 day pass">
+        <img class="img"  src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-16-1-day-pass-a272.jpg" alt="1 day pass">
         <div class="pass-desc">
             <p style="font-size:12px;font-weight: bold"> FB PLUS PASS</p>
             <p style="font-weight: bold;font-size:18px">1-Day Pass</p>
             <div class="innerbuttons">
-                <div><p>$1.99</p></div>
-                <div><button style>ADD TO BAG</button></div>
+                <div><p class="price">$1.99</p></div>
+                <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
             </div>
         </div>
     </div>
     <div class="passes-class">
-        <img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-15-7-day-pass-8070.jpg" alt="7 day pass">
+        <img class="img" src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-15-7-day-pass-8070.jpg" alt="7 day pass">
         <div class="pass-desc">
             <p style="font-size:12px;font-weight: bold"> FB PLUS PASS</p>
             <p style="font-weight: bold;font-size:18px">7-Day Pass</p>
             <div class="innerbuttons">
-                <div><p>$3.99</p></div>
-                <div><button style>ADD TO BAG</button></div>
+                <div><p class="price">$3.99</p></div>
+                <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
             </div>
         </div>
 
     </div>
     <div class="passes-class">
-        <img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-14-14-day-pass-b885.jpg" alt="14 day pass">
+        <img class="img"src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-14-14-day-pass-b885.jpg" alt="14 day pass">
         <div class="pass-desc">
             <p style="font-size:12px;font-weight: bold"> FB PLUS PASS</p>
             <p style="font-weight: bold;font-size:18px">14-Day Pass</p>
             <div class="innerbuttons">
-                <div><p>$7.99</p></div>
-                <div><button style>ADD TO BAG</button></div>
+                <div><p class="price">$7.99</p></div>
+                <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
             </div>
         </div>
     </div>
     <div class="passes-class">
-        <img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-13-30-day-pass-9318.jpg" alt="30 day pass">
+        <img class="img"src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-13-30-day-pass-9318.jpg" alt="30 day pass">
         <div class="pass-desc">
             <p style="font-size:12px;font-weight: bold"> FB PLUS PASS</p>
             <p style="font-weight: bold;font-size:18px">30-Day Pass</p>
             <div class="innerbuttons">
-                <div><p >$11.99</p></div>
-                <div><button style>ADD TO BAG</button></div>
+                <div><p class="price">$11.99</p></div>
+                <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
             </div>
         </div>
     </div>
     <div class="passes-class">
-        <img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-12-90-day-pass-89f6.jpg" alt="90 day pass">
+        <img class="img"src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-12-90-day-pass-89f6.jpg" alt="90 day pass">
         
         <div class="pass-desc">
             <p style="font-size:12px;font-weight: bold"> FB PLUS PASS</p>
             <p style="font-weight: bold;font-size:18px">90-Day Pass</p>
             
             <div class="innerbuttons">
-            <div><p>$29.99</p></div>
-            <div><button style>ADD TO BAG</button></div>
+            <div><p class="price">$29.99</p></div>
+            <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
         </div>
         
         </div>
@@ -108,50 +115,51 @@
   <div id="inner-parent-2">
 <div id="boundary-2">
 <div>
-    <img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-1-10-egift-card-84c3.jpg" alt="">
+    <img class="img"  src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-1-10-egift-card-84c3.jpg" alt="">
     <div class="innerbuttons">
-        <div><p >$10</p></div>
-        <div><button style>ADD TO BAG</button></div>
+        <div><p class="price">$10</p></div>
+        <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
     </div>
     
 </div>
 <div>
-    <img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-2-20-egift-card-a464.jpg" alt="">
+    <img class="img" src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-2-20-egift-card-a464.jpg" alt="">
     <div class="innerbuttons">
-        <div><p >$20</p></div>
-        <div><button style>ADD TO BAG</button></div>
+        <div><p class="price" >$20</p></div>
+        <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
     </div>
 </div>
-<div><img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-3-30-egift-card-a760.jpg" alt="">
+<div><img class="img"src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-3-30-egift-card-a760.jpg" alt="">
     <div class="innerbuttons">
-        <div><p >$30</p></div>
-        <div><button style>ADD TO BAG</button></div>
+        <div><p class="price">$30</p></div>
+        <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
     </div>
 </div>
-<div><img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-4-40-egift-card-a504.jpg" alt="">
+ <div><img class="img"  src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-4-40-egift-card-a504.jpg" alt="">
     <div class="innerbuttons">
-        <div><p >$40</p></div>
-        <div><button style>ADD TO BAG</button></div>
+        <div><p class="price">$40</p></div>
+        <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
     </div></div>
-<div><img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-5-50-egift-card-8e17.jpg" alt="">
+ <div><img class="img" src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-5-50-egift-card-8e17.jpg" alt="">
     <div class="innerbuttons">
-        <div><p >$50</p></div>
-        <div><button style>ADD TO BAG</button></div>
+        <div><p class="price">$50</p></div>
+        <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
     </div></div>
-<div><img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-6-75-egift-card-b723.jpg" alt="">
+ <div>
+    <img class="img" src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-6-75-egift-card-b723.jpg" alt="">
     <div class="innerbuttons">
-        <div><p >$75</p></div>
-        <div><button style>ADD TO BAG</button></div>
+        <div><p class="price">$75</p></div>
+        <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
+    </div></div> 
+<div><img class="img" src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-8-7999-egift-card-limited-bece.jpg" alt="">
+    <div class="innerbuttons">
+        <div><p class="price">$79.99</p></div>
+        <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
     </div></div>
-<div><img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-8-7999-egift-card-limited-bece.jpg" alt="">
+<div><img class="img" src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-7-100-egift-card-8673.jpg" alt="">
     <div class="innerbuttons">
-        <div><p >$79.99</p></div>
-        <div><button style>ADD TO BAG</button></div>
-    </div></div>
-<div><img src="https://d18zdz9g6n5za7.cloudfront.net/products/640/640-7-100-egift-card-8673.jpg" alt="">
-    <div class="innerbuttons">
-        <div><p >$100</p></div>
-        <div><button style>ADD TO BAG</button></div>
+        <div><p class="price">$100</p></div>
+        <div><button class="btn" onclick="addTocart(event)">ADD TO BAG</button></div>
     </div></div>
 
 </div>
@@ -253,4 +261,4 @@
 </html>
 
 
-<script src="./scripts/store.js"></script>
+<script type="module" src="./scripts/store.js"></script>

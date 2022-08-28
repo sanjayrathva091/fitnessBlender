@@ -15,9 +15,9 @@ function myheader() {
   <span class="material-symbols-outlined">arrow_drop_down</span>
   <div>
       <h3>WORKOUT PROGRAMS</h3>
-      <h3>MEAL PLANS</h3>
-      <h3>PILOT PROGRAMS</h3>
-      <h3>ROUTINES</h3>
+      <h3><a href="./meal.html">MEAL PLANS</a></h3>
+      <h3><a href="./pilot.html">PILOT PROGRAMS</a></h3>
+      <h3><a href="./routine.html">ROUTINES</a></h3>
   </div>
 </div>
 <div id="head_healthy_living">
@@ -33,9 +33,9 @@ function myheader() {
   <p>COMMUNITY</p>
   <span class="material-symbols-outlined">arrow_drop_down</span>
   <div>
-      <h3>COMMUNITY</h3>
-      <h3>BLOG</h3>
-      <h3>WHAT'S NEW</h3>
+      <h3><a href="./community.html">COMMUNITY</a></h3>
+      <h3><a href="./blog1.html">BLOG</a></h3>
+      <h3><a href="./whatsnew.html">WHAT'S NEW</a></h3>
   </div>
 </div>
 <div id="head_about">
@@ -48,7 +48,7 @@ function myheader() {
       <h3>TEAMS</h3>
   </div>
 </div>
-<div id="head_store"><p>STORE</p></div>
+<div id="head_store"><a href="./store.html"><p>STORE</p></a></div>
 <div id="head_membership"><p>MEMBERSHIP</p></div>
 <div id="head_loginout">
   <div>Hi! Sign In</div>
@@ -60,12 +60,12 @@ function myheader() {
           get support from other Fitness 
           Blender members and more!
       </p>
-      <button>JOIN</button>
-      <button>SIGN IN</button>
+      <div><a href="./join.html">JOIN</a></div>
+      <div><a href="./signin.html">SIGN IN</a></div>
   </div>
 </div>
 <div id="head_search"><p><span class="material-symbols-rounded">search</span></p></div>
-<div id="head_cart"><p><span class="material-symbols-rounded">shopping_bag</span></p></div>`;
+<div id="head_cart"><a href="./cart.html"><p><span class="material-symbols-rounded">shopping_bag</span></p></a></div>`;
 }
 
 function myfooter() {

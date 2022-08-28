@@ -1,5 +1,5 @@
 /* * CSS style code here */
-
+/* * CSS style for anouncement features */
 body {
     margin: 0;
     padding: 0;
@@ -31,6 +31,8 @@ body {
     align-items: center;
 }
 
+/* * CSS style for header features */
+
 .material-symbols-outlined {
     color: #4296CB;
 }
@@ -40,6 +42,7 @@ body {
     /* border: 1px solid black; */
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;;
     padding: 0 30px;
     box-sizing: border-box;
@@ -66,6 +69,7 @@ body {
     display: flex;
     padding: 33px 9px;
     box-sizing: border-box;
+    margin-left: 10px;
 }
 
 #head_workouts div {
@@ -73,9 +77,13 @@ body {
 }
 
 #head_workouts:hover> div {
-    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     position: absolute;
     top: 110px;
+    right: 0px;
+    left: 0px;
     z-index: 1000;
     color: white;
     background-color: #212432;
@@ -95,15 +103,24 @@ body {
 }
 
 #head_programs:hover > div {
-    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     position: absolute;
     top: 110px;
+    right: 0px;
+    left: 0px;
     z-index: 1000;
     color: white;
     background-color: #212432;
     width: auto;
     height: 170px;
     padding: 0 20px;
+}
+
+#head_programs > div a {
+    text-decoration: none;
+    color: white;
 }
 
 #head_healthy_living {
@@ -117,9 +134,13 @@ body {
 }
 
 #head_healthy_living:hover > div {
-    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     position: absolute;
     top: 110px;
+    right: 0px;
+    left: 0px;
     z-index: 1000;
     color: white;
     background-color: #212432;
@@ -139,15 +160,24 @@ body {
 }
 
 #head_community:hover > div {
-    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     position: absolute;
     top: 110px;
+    right: 0px;
+    left: 0px;
     z-index: 1000;
     color: white;
     background-color: #212432;
     width: auto;
     height: 170px;
     padding: 0 20px;
+}
+
+#head_community > div a {
+    text-decoration: none;
+    color: white;
 }
 
 #head_about {
@@ -161,9 +191,13 @@ body {
 }
 
 #head_about:hover > div {
-    display: block;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
     position: absolute;
     top: 110px;
+    right: 0px;
+    left: 0px;
     z-index: 1000;
     color: white;
     background-color: #212432;
@@ -175,6 +209,11 @@ body {
 #head_store {
     padding: 33px 16px;
     box-sizing: border-box;
+}
+
+#head_store a {
+    text-decoration: none;
+    color: #212432;
 }
 
 #head_membership {
@@ -214,23 +253,47 @@ div #head_loginout .sub-menu {
     color: white;
     background-color: #212432;
     padding: 0 10px;
-    height: 170px;
+    height: 270px;
 }
 
 div #head_loginout:hover .sub-menu {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .sub-menu h3 {
-    width: fit-content;
-    /* border: 1px solid white; */
+    width: 80%;
 }
 
 .sub-menu p {
-    width: 60%;
+    width: 80%;
     text-align: left;
+    color: #ced1db;
     /* border: 1px solid white; */
+}
+
+.sub-menu p+div {
+    width: 80%;
+    background-color: #4296CB;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.sub-menu div+div {
+    border: 1px solid #4296CB;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    width: 80%;
+}
+
+.sub-menu div a {
+    text-decoration: none;
+    color: white;
 }
 
 #head_search {
@@ -246,6 +309,8 @@ div #head_loginout:hover .sub-menu {
   'GRAD' 0,
   'opsz' 48
 }
+
+/* * CSS styles for main content */
 
 .content-group {
     font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
@@ -265,8 +330,6 @@ div #head_loginout:hover .sub-menu {
 }
 
 .unit-primary > div h2 {
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
     font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     word-wrap: break-word;
     box-sizing: border-box;
@@ -282,8 +345,6 @@ div #head_loginout:hover .sub-menu {
 }
 
 .unit-primary > div p {
-    -webkit-text-size-adjust: 100%;
-    -webkit-font-smoothing: antialiased;
     font-family: "Maison Neue","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
     font-weight: 400;
     word-wrap: break-word;
@@ -293,8 +354,9 @@ div #head_loginout:hover .sub-menu {
     line-height: 1.6em;
     position: relative;
     z-index: 3;
-    font-size: 1.2rem;
+    font-size: 20px;
     color: #fff;
+    width: 117%;
 }
 
 .unit-cta {
@@ -342,7 +404,6 @@ div #head_loginout:hover .sub-menu {
 }
 
 *, *:before, *:after {
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 

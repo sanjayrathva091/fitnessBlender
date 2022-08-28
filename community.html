@@ -5,22 +5,107 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Community | Finess Blender</title>
-     <link rel="stylesheet" href="community.css">
+     <link rel="stylesheet" href="./styles/community.css">
+     <!-- * header and footer stylesheet -->
+    <link rel="stylesheet" href="./styles/stylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> -->
+    <!-- * finished header and footer stylesheet -->
   </head>
   <body>
+    <div id="navbar"></div>
     <div id="header">
-      <h1 id="h1tag">Community</h1>
+      <div class="container">      
+        <h1 id="h1tag">Community</h1>
       <div id="control">
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">TOPICS</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#home">FB Team</a>
-              <a href="#about">Workout</a>
-              <a href="#contact">Nutrition</a>
-              <a href="#contact">Community Tab</a>
-              <a href="#contact">New To Fb</a>
-              <a href="#contact">Customer Support Help</a>
-            </div>
+            <button onclick="dropdownHandler()" class="dropbtn">TOPICS</button>
+            
+            <ul class="dropdown-2">
+              <li>
+                <a href="#home">FB Team</a>
+                <ul class="child-dropdown">
+                  <li>
+                    <a href="">Fb team posts </a>
+                  </li>
+                  <li>
+                    <a href="#about">Fb team  news</a>
+                  </li>
+                  <li>
+                    <a href="#about">Fb site updates</a>
+                  </li>
+                  <li>
+                    <a href="#about">Announcements</a>
+                  </li>
+                  <li>
+                    <a href="#about">Giveaway</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#home">Workouts</a>
+                <ul class="child-dropdown">
+                  <li>
+                    <a href="#home">New release </a>
+                  </li>
+                  <li>
+                    <a href="#about">Workout complete check in</a>
+                  </li>
+                  <li>
+                    <a href="#about">Workout programs</a>
+                  </li>
+                  <li>
+                    <a href="#about">Goal setting</a>
+                  </li>
+                  <li>
+                    <a href="#about">Workout without highlight</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#home">Nutritions</a>
+                <ul class="child-dropdown">
+                  <li>
+                    <a href="#home">Nutritions talk </a>
+                  </li>
+                  <li>
+                    <a href="#about">Fb meal plans</a>
+                  </li>
+                  <li>
+                    <a href="#about">Recipe and meals</a>
+                  </li>
+                   
+                </ul>
+              </li>
+              <li>
+                <a href="#home">New to Fb</a>
+                <ul class="child-dropdown">
+                  <li>
+                    <a href="#home">Welcome quesions </a>
+                  </li>
+                  <li>
+                    <a href="#about">Begineer:How/Where to start</a>
+                  </li>
+                  
+                </ul>
+              </li>
+              <li>
+                <a href="#home">Customer support help</a>
+                <ul class="child-dropdown">
+                  <li>
+                    <a href="#home">Product help </a>
+                  </li>
+                  <li>
+                    <a href="#about">site help</a>
+                  </li>
+                  <li>
+                    <a href="#about">customer help</a>
+                  </li>
+                 
+                </ul>
+              </li>
+            </ul>
           </div>
       
        <div id="control2">
@@ -40,43 +125,67 @@
           </form>
         </div>
       </div>
+      </div>
     </div>
     </div>
+ <section>
+  <div class="container">
+    <div class="mid">
+         <h3 class="discussion">DISCUSSIONS</h3>
+         <h3 class="postedin">POSTED IN</h3>
+         <h3 class="replies">REPLIES</h3>
+         <h3 class="likes">LIKES</h3>
+    </div>
+  </div>
+</section>
 
-    <div id="mid">
-         <h3 id="discussion">DISCUSSIONS</h3>
-         <h3 id="postedin">POSTED IN</h3>
-         <h3 id="replies">REPLIES</h3>
-         <h3 id="likes">LIKES</h3>
-    </div>
-    <div id="last">
-    <div id="container"></div>
-    <div id="container2"></div>
-    <div id="container3"></div>
-    <div id="container4"></div>
-    </div>
+
+<section class="list-section">
+<div class="container">
+  <ul class="list">
+    <li class="list-item">
+      <div class="discussion">
+        <img src="https://d3scpmvvk35ffs.cloudfront.net/avatars/5/2ccedf429e2aa7b5e997ba8106b9fcc0.jpg?t=1568666676" alt="">
+        <div class="title-wrapper">
+          <div class="title">
+            <h3>New workout:Lower body workout with cardio </h3>
+            <p>By keli s -22 hours ago"</p>
+          </div>
+        </div>
+      </div>
+      <div class="posted-in">
+        Workouts / New Releases
+      </div>
+      <div class="replies">5</div>
+      <div class="likes">10</div>
+       
+
+    </li>
+
+  </ul>
+</div>
+</section>
+<footer id="footer" class="site__footer" role="contentinfo"></footer>
   </body>
 </html>
+<script type="module">
+  import { myheader, myfooter } from './components/components.js';
+
+let hd = document.querySelector('#navbar');
+hd.innerHTML = myheader();
+
+let ft = document.querySelector('footer');
+ft.innerHTML = myfooter();
+</script>
 <script>
-     
+  
  
- function myFunction() {
-   document.getElementById("myDropdown").classList.toggle("show");
+ function dropdownHandler() {
+  
+   document.querySelector('.dropdown-2').classList.toggle('show')
  }
  
   
- window.onclick = function(event) {
-   if (!event.target.matches('.dropbtn')) {
-     var dropdowns = document.getElementsByClassName("dropdown-content");
-     var i;
-     for (i = 0; i < dropdowns.length; i++) {
-       var openDropdown = dropdowns[i];
-       if (openDropdown.classList.contains('show')) {
-         openDropdown.classList.remove('show');
-       }
-     }
-   }
- }
  
 </script>
 <script>
@@ -199,46 +308,83 @@
     ]
 </script>
 <script>
+ let list = document.querySelector('.list')
+ console.log("list", list)
+  data.forEach(item=>{
+    // dissc
+//li
+     let liNode=document.createElement("li")
+    liNode.setAttribute("class","list-item")
+    list.append(liNode)
+
+    // append disscussion inside li
+
+    let discussionNode=document.createElement("div")
+    discussionNode.setAttribute("class","discussion")
+    liNode.append(discussionNode)
+
+    // add image and tittle-wrapper inside dissccussion
+    let imgNode=document.createElement("img")
+    imgNode.setAttribute("src",item.image)
+    discussionNode.append(imgNode)
+
+    let titleWrapperNode=document.createElement("div")
+    titleWrapperNode.setAttribute("class",'title-wrapper')
+    discussionNode.append(titleWrapperNode)
+
+
+    let titleNode=document.createElement("div")
+    titleNode.setAttribute("class",'title')
+    titleWrapperNode.append(titleNode)
+
+    let title=document.createElement("h3")
+    title.innerText=item.title
+    let desc=document.createElement("p")
+    desc.innerText=item.desc;
+    titleNode.append(title,desc)
+
+
+    let postedinNode=document.createElement("div")
+    postedinNode.setAttribute("class","posted-in")
+    liNode.append(postedinNode)
+
+    let posted=document.createElement("p")
+    posted.innerText=item.posted;
+    postedinNode.append(posted)
+
+    let repliesNode=document.createElement("div")
+    repliesNode.setAttribute("class","replies")
+    liNode.append(repliesNode)
+
+    let reply=document.createElement("p")
+    reply.innerText=item.replies;
+    repliesNode.append(reply)
+
+
     
-    let container=document.getElementById("container")
-    let container2=document.getElementById("container2")
-    let container3=document.getElementById("container3")
-    let container4=document.getElementById("container4")
-    append(data)
-    function append(data){
+    let likesNode=document.createElement("div")
+    likesNode.setAttribute("class","likes")
+    liNode.append(likesNode)
+
+    let likes=document.createElement("p")
+    likes.innerText=item.likes;
+    likesNode.append(likes)
+
+
+  // add title and description inside title wrapper
+  
+
+        // let disc in a variable 
+        // append dist children in it
+            // -- and so on
+
+
+    //posted in
+    //reply
+    //like
+  })
     
-        data.forEach(function(elem,index){
-console.log(data)
-let div=document.createElement("div")
-div.setAttribute("id","div1")
-let image=document.createElement("img")
-image.src=elem.image
-let div2=document.createElement("div")
-let title=document.createElement("h2")
-title.setAttribute("id","title")
-title.innerText=elem.title;
-let desc=document.createElement("p")
-desc.innerText=elem.desc
-let div3=document.createElement("div")
-div3.setAttribute("id","div3")
-div3.innerText=elem.posted
+ 
 
-let div4=document.createElement("div")
-div4.setAttribute("id","div4")
-div4.innerText=elem.replies
-
-let div5=document.createElement("div")
-div5.setAttribute("id","div4")
-div5.innerText=elem.likes
-
-div2.append(title,desc)
-div.append(image,div2)
-container.append(div)
-container2.append(div3)
-container3.append(div4)
-container4.append(div5)
-
-})
-
-    }
+    
 </script>
