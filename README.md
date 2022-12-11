@@ -1,2 +1,2 @@
 # screeching-idea-7572
-This is a group project at Masai. We are going to clone fitness blender website in this project.
+This is a group project at Masai. We have cloned features of fitness blender website in this project.
