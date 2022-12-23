@@ -1,6 +1,7 @@
 Fitness Blunder  is a unique, full-lifestyle shopping destination, with a mostly exclusive assortment of health and all
 
 ## Have a Look 😍
+### Deployed Link: https://fitness-blender-js-group.netlify.app/
 ### Navbar and Home Page
 <p align="center">
   <img src="./public/anthropologie_01.png" alt='anthropologie_01 image' align="center" />
